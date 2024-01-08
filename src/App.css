@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jost:wght@300&family=Montserrat&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+html{
+  
+  font-size: 65%;
+}
+body{
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.heading{
+  text-align: center;
+  font-size: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+
+
+  
+}
+.heading h3{
+  position: relative;
+  left: 100px;
+}
+.switch{
+
+  display: inline-block;
+ 
+}
+.light{
+  background-color: white;
+  color: black;
+}
+.dark{
+
+   background-color: black;
+  color: white;
+}
+.btn_tab{
+  display: grid;
+  grid-template-columns: repeat(5,200px);
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.btn{
+  font-size: 2rem;
+  background-color: #ffaa00;
+  color: black;
+  border: none;
+ cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+}
+.btn.dark{
+  box-shadow: 0 0 15px #ffaa00;
+}
+.btn:hover{
+  color: red;
+}
+.card_container{
+  width: 90%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+ 
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+
+  margin: 10px auto;
+    
+}
+.card{
+  display: flex;
+  width: 400px;
+  height: 150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px gray;
+  box-sizing: border-box;
+  margin: 10px;
+  overflow: hidden;
+
+}
+.card.dark{
+  box-shadow: 2px 1px 10px #26a69a;
+}
+.img_container{
+  width: 200px;
+  height: auto;
+
+}
+.img_container img{
+  width: 100%;
+ height: 100%;
+    object-fit: cover;
+
+}
+.img_container img:hover{
+  transition: all 0.3s ease 0s;
+  transform: scale(1.1);
+}
+          
+.content{
+  width: auto;
+
+
+  padding: 0 5px;
+}
+.content p{
+  font-size: 1.5rem;
+}
+.content_details h1{
+  font-size: 3rem;
+}
+.content_details p{
+  font-size: 1.5rem;
+}
+.price_tab{
+  display: flex;
+  justify-content: space-between;
+  color: #26a69a;
+  padding: 5px 0;
+
+
+}
+.order_btn{
+  font-size: 1.4rem;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #26a69a;
+  color: black;
+  border-radius: 2px;
+  border: none;
+  font-weight: bold;
+}
+.order_btn.dark{
+  box-shadow: 0 0 10px #26a69a;
+}
+.order_btn:hover{
+  
+  transition: all 0.2s ease 0s;
+  transform: scale(1.1);
+}
+.css-ahj2mt-MuiTypography-root {
+  font-size: 1.3rem !important; /* Use !important to ensure it takes precedence */
+}
+
+.css-yslrua-MuiTypography-root-MuiAlertTitle-root{
+  font-size: 1.5rem !important;
+
+
+}
+.alt_msg{
+  font-size: 1.3rem !important;
+}
